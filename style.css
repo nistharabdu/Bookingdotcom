@@ -32,14 +32,25 @@
 
 /* common */
 .white { color: var(--white); }
+.white-bg {  background-color: var(--white); color: #000; }
 .circle { border-radius: 50%; overflow: hidden; }
 .icons { width: var(--icons-width); height: var(--icons-width); }
 
 /* header */
 header { background-color: var(--main-bg-color); color: var(--white); }
-.category__each { border-radius: 999px;}
+.category__each { border-radius: 999px; }
+.category__each.active { background: rgba(255, 255, 255, 0.1); border: 1px solid #fff; }
 
 /* banner */
-.banner { padding: 12rem 0; }
+.banner { padding: 12rem 0; position: relative;}
+.banner-hero__mask {
+    width: 100%; height: 100%; position: absolute; top: 0;
+    right: 0; left: 0;  bottom: 0; background: rgba(5,55,126,0.70); z-index: 0;
+}
 .banner h1 { font-size: var(--heading-1-font-size); font-weight: var(--heading-1-font-wight); line-height: var(--heading-1-line-height);}
 .banner h2 { font-size: var(--heading-2-font-size); font-weight: var(--heading-2-font-wight); line-height: var(--heading-2-line-height); }
+.banner__content__search { background-color: var(--yellow);}
+.banner__content__search__text input {
+    background-image: url('https://cf.bstatic.com/static/img/cross_product_index/accommodation/07ca5cacc9d77a7b50ca3c424ecd606114d9be75.svg');
+    background-position: .75rem 50%; padding-left: 2.75rem; background-repeat: no-repeat;
+ }
