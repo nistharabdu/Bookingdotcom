@@ -117,7 +117,7 @@
                                             </div>
                                          </div>
                                          <div class="flex">
-                                            <button type="submit" class="text-lg btn btn--blue">
+                                            <button type="submit" class="text-lg btn btn--blue form-submit-btn">
                                                 Search
                                             </button>
                                          </div>
@@ -133,11 +133,9 @@
                 </div>
                 <div class="main-content my-10">
                     <div class="container mx-auto"> 
-                        <div class="breadcums">
-
-                        </div>
+                        <div class="breadcums"></div>
                         <div class="flex">
-                            <div class="w-1/4">
+                            <div class="w-1/5">
                                 <div class="hotels-maps">
                                     <img src="//cf.bstatic.com/static/img/map/map-entry-point/7813a559b03ef30ba107ca5224172615a210e416.png" alt="">
                                 </div>
@@ -153,7 +151,7 @@
                                         <div class="filter-by__each__content">
                                             <div class="flex mb-3">
                                                 <div class="filter-by__each__checkbox mr-3">
-                                                    <input type="checkbox" name="" id="">
+                                                    <input type="checkbox" name="rating" id="" value="5">
                                                 </div>
                                                 <div class="filter-by__each__text">
                                                     5 Star
@@ -161,10 +159,18 @@
                                             </div>
                                             <div class="flex mb-3">
                                                 <div class="filter-by__each__checkbox mr-3">
-                                                    <input type="checkbox" name="" id="">
+                                                    <input type="checkbox" name="rating" id="" value="4">
                                                 </div>
                                                 <div class="filter-by__each__text">
                                                     4 Star
+                                                </div>
+                                            </div>
+                                            <div class="flex mb-3">
+                                                <div class="filter-by__each__checkbox mr-3">
+                                                    <input type="checkbox" name="rating" id="" value="3">
+                                                </div>
+                                                <div class="filter-by__each__text">
+                                                    3 Star
                                                 </div>
                                             </div>
                                         </div>
@@ -176,7 +182,7 @@
                                         <div class="filter-by__each__content">
                                             <div class="flex mb-3">
                                                 <div class="filter-by__each__checkbox mr-3">
-                                                    <input type="checkbox" name="" id="">
+                                                    <input type="checkbox" name="reviewScore" id="" value="9">
                                                 </div>
                                                 <div class="filter-by__each__text">
                                                     Wonderful: 9+
@@ -184,7 +190,7 @@
                                             </div>
                                             <div class="flex mb-3">
                                                 <div class="filter-by__each__checkbox mr-3">
-                                                    <input type="checkbox" name="" id="">
+                                                    <input type="checkbox" name="reviewScore" id="" value="8">
                                                 </div>
                                                 <div class="filter-by__each__text">
                                                     Very Good: 8+
@@ -196,13 +202,13 @@
                             </div>
                             <div class="flex-1 pl-5">
                                 <div class="results-count font-bold mb-3">
-                                    Dubai – 7,968 hotels and places to stay
+                                    Dubai – <span class="results-count-data">7,968</span> hotels and places to stay
                                 </div>
                                 <div class="flex top-filter mb-3">
                                     <div class="top-filter__each flex-1 p-3">
                                         <button>Our Top Picks</button>
                                     </div>
-                                    <div class="top-filter__each flex-1  p-3">
+                                    <div class="top-filter__each top-filter__each--lowest-price flex-1  p-3">
                                         <button>Lowest Price First</button>
                                     </div>
                                     <div class="top-filter__each flex-1  p-3">
@@ -212,122 +218,13 @@
                                         <button>Top Reviewed</button>
                                     </div>
                                 </div>
-                                <div class="hotel-lists">
-                                    <div class="flex hotel-lists__each my-3 p-4">
-                                        <div class="hotel-lists__each__image">
-                                            <img src="https://cf.bstatic.com/xdata/images/hotel/square200/213805317.webp?k=585650f1f40386c753b20860da232a915d6e5124a822614b0107c91efbebbfa8&o=" alt="">
-                                        </div>
-                                        <div class="hotel-lists__each__content flex-1 pl-3 pr-0">
-                                            <div class="flex ">
-                                                <div class="hotel-lists__each__content__descp pr-3">
-                                                    <div class="flex hotel-lists__each__title items-center mb-0">
-                                                        <div class="font-bold">
-                                                            <h3>Five Jumeirah Village</h3>
-                                                        </div>
-                                                        <div class="hotel-lists__each__rating pl-3">
-                                                            <svg aria-hidden="true" class="bk-icon -sprite-ratings_stars_4" focusable="false" height="10" width="43" viewBox="0 0 52 12" role="presentation"><path d="m13 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.1-.5-.1-.5 0l-1.5 4-4.6.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3h.3l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.4 3.5-2.5c.1 0 .1-.1.1-.2zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5z" fill="#feba02"></path></svg>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex items-center hotel-lists__each__location mb-3">
-                                                        <div class="hotel-lists__each__location__icon">
-                                                            <svg class="bk-icon -iconset-geo_pin" height="20" role="presentation" width="20" viewBox="0 0 128 128" aria-hidden="true" focusable="false"><path d="M98.5 42.5a34.5 34.5 0 1 0-64.3 17.2L64 120l29.8-60.3a34.2 34.2 0 0 0 4.7-17.2zM64 59.7a17.2 17.2 0 1 1 17-17 17.2 17.2 0 0 1-17 17z"></path></svg>
-                                                        </div>
-                                                        <div class="hotel-lists__each__location__name">
-                                                            Hotel in Dubai
-                                                        </div>
-                                                    </div>
-                                                    <div class="hotel-lists__each__address mb-3">
-                                                        Located in Dubai, 5 mi from Dubai Autodrome, Five Jumeirah Village features accommodations with a restaurant, free private parking, an outdoor swimming pool and a fitness center. 
-                                                    </div>
-                                                    <div class="hotel-lists__each__more-link">Show more</div>
-                                                </div>
-                                                <div class="hotel-lists__each__content__price flex-none flex justify-between flex-col">
-                                                    <div class="flex hotel-lists__each__review  items-center">
-                                                        <div class="hotel-lists__each__review__content">
-                                                            <div class="hotel-lists__each__review__text font-bold">Wonderful</div>
-                                                            <div class="hotel-lists__each__review__number">36,267 reviews</div>
-                                                        </div>
-                                                        <div class="hotel-lists__each__review__badge ml-2">
-                                                            <div class="flex items-center justify-center hotel-lists__each__review__number__content font-bold">
-                                                                9
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hotel-lists__each__price mb-3">
-                                                        <div>Price from</div>
-                                                        <div><span class="font-bold">AED 405</span></div>
-                                                        <div>per night</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hotel-lists__each__button flex justify-end">
-                                                <button class="btn btn--blue">Check availability</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex hotel-lists__each my-3 p-4">
-                                        <div class="hotel-lists__each__image">
-                                            <img src="https://cf.bstatic.com/xdata/images/hotel/square200/213805317.webp?k=585650f1f40386c753b20860da232a915d6e5124a822614b0107c91efbebbfa8&o=" alt="">
-                                        </div>
-                                        <div class="hotel-lists__each__content flex-1 pl-3 pr-0">
-                                            <div class="flex ">
-                                                <div class="hotel-lists__each__content__descp pr-3">
-                                                    <div class="flex hotel-lists__each__title items-center mb-0">
-                                                        <div class="font-bold">
-                                                            <h3>Five Jumeirah Village</h3>
-                                                        </div>
-                                                        <div class="hotel-lists__each__rating pl-3">
-                                                            <svg aria-hidden="true" class="bk-icon -sprite-ratings_stars_4" focusable="false" height="10" width="43" viewBox="0 0 52 12" role="presentation"><path d="m13 4.6c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.1-.5-.1-.5 0l-1.5 4-4.6.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3h.3l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.4 3.5-2.5c.1 0 .1-.1.1-.2zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5zm13 0c0-.1-.1-.2-.2-.2l-4.5-.3-1.5-4c-.1-.2-.4-.2-.5 0l-1.5 4-4.5.3c-.1 0-.2.1-.2.2s0 .2.1.3l3.5 2.5-1.2 4.3c0 .1 0 .2.1.3s.2.1.3 0l3.7-2.6 3.7 2.6h.3c.1-.1.1-.2.1-.3l-1.2-4.3 3.5-2.5z" fill="#feba02"></path></svg>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex items-center hotel-lists__each__location mb-3">
-                                                        <div class="hotel-lists__each__location__icon">
-                                                            <svg class="bk-icon -iconset-geo_pin" height="20" role="presentation" width="20" viewBox="0 0 128 128" aria-hidden="true" focusable="false"><path d="M98.5 42.5a34.5 34.5 0 1 0-64.3 17.2L64 120l29.8-60.3a34.2 34.2 0 0 0 4.7-17.2zM64 59.7a17.2 17.2 0 1 1 17-17 17.2 17.2 0 0 1-17 17z"></path></svg>
-                                                        </div>
-                                                        <div class="hotel-lists__each__location__name">
-                                                            Hotel in Dubai
-                                                        </div>
-                                                    </div>
-                                                    <div class="hotel-lists__each__address mb-3">
-                                                        Located in Dubai, 5 mi from Dubai Autodrome, Five Jumeirah Village features accommodations with a restaurant, free private parking, an outdoor swimming pool and a fitness center. 
-                                                    </div>
-                                                    <div class="hotel-lists__each__more-link">Show more</div>
-                                                </div>
-                                                <div class="hotel-lists__each__content__price flex-none flex justify-between flex-col">
-                                                    <div class="flex hotel-lists__each__review  items-center">
-                                                        <div class="hotel-lists__each__review__content">
-                                                            <div class="hotel-lists__each__review__text font-bold">Wonderful</div>
-                                                            <div class="hotel-lists__each__review__number">36,267 reviews</div>
-                                                        </div>
-                                                        <div class="hotel-lists__each__review__badge ml-2">
-                                                            <div class="flex items-center justify-center hotel-lists__each__review__number__content font-bold">
-                                                                9
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="hotel-lists__each__price mb-3">
-                                                        <div>Price from</div>
-                                                        <div><span class="font-bold">AED 405</span></div>
-                                                        <div>per night</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hotel-lists__each__button flex justify-end">
-                                                <button class="btn btn--blue">Check availability</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="hotel-lists"></div>
                             </div>
-    
-                            
-                            
                         </div>
                     </div>
-      
                 </div>
             </div>
         </div>
-        <script src="script.js" async defer></script>
+        <script src="script.js" async defer type="module"></script>
     </body>
 </html>

@@ -40,8 +40,9 @@ body { font-size: 16px; }
 
 /* header */
 header { background-color: var(--main-bg-color); color: var(--white); }
-.category__each { border-radius: 999px; }
-.category__each.active { background: rgba(255, 255, 255, 0.1); border: 1px solid #fff; }
+.category__each { border-radius: 999px; border: 1px solid var(--main-bg-color);; }
+.category__each.active  { background: rgba(255, 255, 255, 0.1); border: 1px solid #fff; }
+.category__each:hover { background: rgba(255, 255, 255, 0.1);  }
 
 /* banner */
 .banner { padding: 12rem 0; position: relative;}
@@ -54,13 +55,13 @@ header { background-color: var(--main-bg-color); color: var(--white); }
 .banner__content__search { background-color: var(--yellow);}
 .banner__content__search__text input {
     background-image: url('https://cf.bstatic.com/static/img/cross_product_index/accommodation/07ca5cacc9d77a7b50ca3c424ecd606114d9be75.svg');
-    background-position: .75rem 50%; padding-left: 2.75rem; background-repeat: no-repeat;
+    background-position: .75rem 50%; padding-left: 2.75rem; background-repeat: no-repeat; color: #000;
  }
 
 /* Top Filter */
 .top-filter { border: 1px solid #0071c2;}
-.top-filter > div { border-right: 1px solid #0071c2; text-align: center; color: #0071c2; }
-.top-filter > div:hover { background-color: #0071c2; color: #fff; }
+.top-filter > div { border-right: 1px solid #0071c2; text-align: center; color: #0071c2; font-size: 14px; }
+.top-filter > div:hover,.top-filter > div.active { background-color: #0071c2; color: #fff; }
 .top-filter > div:last-child { border-right: 0;}
 
 /* Left Filter */
