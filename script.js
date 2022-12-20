@@ -63,6 +63,7 @@ submitBtn.addEventListener('click',function(e){
         return ele.name.toLocaleLowerCase().indexOf(searchInput) > -1;
     });
     processHotels(filteredHotels);
+    resultsCount.innerHTML = filteredHotels.length;
 });
 
 
